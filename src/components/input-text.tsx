@@ -21,6 +21,6 @@ interface InputTextProps extends VariantProps<typeof inputTextVariants>,
 
 export default function InputText({size, disabled, className, ...props}: InputTextProps) {
     return (
-        <input className={cx(inputTextVariants({size, disabled}), textVariants(), className)} />
+        <input className={cx(inputTextVariants({size, disabled}), textVariants(), className)} {...props} />
     )
 }

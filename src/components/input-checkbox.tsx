@@ -70,7 +70,7 @@ export default function InputCheckbox({variant, size, disabled, className, loadi
     }
 
     return (
-        <label>
+        <label className={inputCheckboxWrapperVariants({ className })}>
             <input type="checkbox" className={inputCheckboxVariants({variant, size, disabled})} {...props} />
             <Icon className={inputCheckboxIconVariants({size})} svg={CheckIcon} />
         </label>
